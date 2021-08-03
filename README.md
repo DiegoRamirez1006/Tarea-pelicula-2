@@ -8,7 +8,7 @@ Esta es una tarea propuesta por el profesor de Diseño Web 2 sobre una API de pe
 
 Tener composer instaldo.
 
-### Pasos para la intalacion
+### Pasos para la intalacion 
 
 ```bash
 composer global require laravel/installer
@@ -79,6 +79,10 @@ $ npm i
 
 $ npm start
 ```
+
+## Intalacion de la base de datos
+
+Dentro de la carpeta de backend se ecuentra una carpeta Script con un archivo sql para importarlo en mysql. 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
