@@ -6,7 +6,8 @@ Esta es una tarea propuesta por el profesor de Diseño Web 2 sobre una API de pe
 
 ### Requisito 
 
-Tener composer instaldo.
+Tener composer instalado.
+Tener Xampp instalado.
 
 ### Pasos para la intalacion 
 
@@ -60,7 +61,7 @@ Eliminar el contenido del Vhost y poner lo siguiente.
 ##</VirtualHost>
 
 <VirtualHost *:80>
-DocumentRoot "C:\xampp\htdocs\proWeb\Tarea-pelicula-2\Backend"
+DocumentRoot "C:\xampp\htdocs\proWeb\Tarea-pelicula-2\Backend" ##Esta direccion es en la que debe estar el de la app
 ServerName backend.localhost
 ErrorLog "logs/anima-api_error.localhost.log"
 CustomLog "logs/anima-api_access.localhost.log" common
@@ -75,19 +76,16 @@ Tener node instalado
 ```python
 Estar situado en frontend y dentro de frotend en MI-PRIMERA-APP y correr los siguientes comandos:
 
-$ npm i
+$ npm i ##Dentro de la ubicacion /Frontend
 
-$ npm start
+$ npm start ##Dentro de la ubicacion /Frontend/my-app-master
 ```
 
 ## Intalacion de la base de datos
 
 Dentro de la carpeta de backend se ecuentra una carpeta Script con un archivo sql para importarlo en mysql. 
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
+## Equipo
+Lucas Padua
+Diego Ramirez
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
