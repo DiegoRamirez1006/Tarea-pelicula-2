@@ -1,15 +1,17 @@
 import React, { Component } from "react";
+import "./App.css";
 import axios from 'axios';
+import "bootstrap/dist/css/bootstrap.min.css";
 class App extends Component {
     state = {
-        Agentes: []
+        peliculas: []
     }
     componentDidMount() {
         axios
-            .get("https://valorant-api.com/v1/agents")
+            .get("http://backend.localhost/")
             .then((response) => {
                 console.log(response);
-                this.setState({ Agentes: response.data.data })
+                this.setState({ peliculas: response.data.data })
             })
             .catch((error) => {
                 console.log(error)
@@ -19,9 +21,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1>Agentes del Valorant</h1>
-                <p>Esto es una api de Valorant, es un juego de acción y lo que se muestra a continuación son los agentes que puedes elegir dentro del juego.</p>
-                {this.state.Agentes.map(elemento => (
+                {this.state.peliculas.map(elemento => (
                     <>
                         <img src={elemento.displayIcon} />
                         <p key={elemento.uuid}>{elemento.displayName}</p>
