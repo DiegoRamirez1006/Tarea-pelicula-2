@@ -1,24 +1,13 @@
 import React from "react";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from './componets/Header'
 
 function App() {
   //document.getelementbyid("agregar").style.display="block";
   return (
     <div className="App">
-      <header id="main-header">
-        <div className="contenedor-menu">
-          <h1 id="titulo">Api Peliculas</h1>
-          <button id="agregar" type="submit">
-            agregar
-          </button>
-          <button id="mostrar" type="submit">
-            mostrar todas las Peliculas
-          </button>
-          <button id="filtar" type="submit">
-            Filtrar Peliculas por id
-          </button>
-        </div>
+      <Header/>
         <form id="form-agendaa" action="">
           <h3>Titulo de la Pelicula</h3>
           <input type="text" />
@@ -35,7 +24,6 @@ function App() {
             Agregar
           </button>
         </form>
-      </header>
     </div>
   );
 }

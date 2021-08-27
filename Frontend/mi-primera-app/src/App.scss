@@ -35,12 +35,40 @@ body{
   color: white;
   box-shadow: 7px 13px 37px #000;
   display: none;
- 
-}
 
-#form-agendaa h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
+  h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  #botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
 }
 
 #controls {
@@ -55,33 +83,6 @@ body{
   color: white;
 }
 
-#form-agendaa p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-#form-agendaa a {
-  color: white;
-  text-decoration: none;
-}
-
-#form-agendaa a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-#form-agendaa #botons {
-  width: 100%;
-  background: #1f53c5;
-  border: none;
-  padding: 14px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-  text-align: center;
-}
 #agregar {
   width: 15%;
   background: #1f53c5;
