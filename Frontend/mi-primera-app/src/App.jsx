@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from './componets/Header'
 
 function App() {
-  //document.getelementbyid("agregar").style.display="block";
   return (
     <div className="App">
       <Header/>
