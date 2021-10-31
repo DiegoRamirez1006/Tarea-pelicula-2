@@ -14,7 +14,7 @@ Tener Xampp instalado.
 ```bash
 cd backend
 composer global require laravel/installer
-composer i
+composer -vvv install
 php artisan serve
 ```
 
